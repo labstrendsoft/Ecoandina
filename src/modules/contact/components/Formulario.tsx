@@ -53,12 +53,7 @@ export const ContactForm = () => {
 	const onSubmit = (data: ContactFormData) => {
 		startTransition(async () => {
 			try {
-				const formData = new FormData();
-				Object.entries(data).forEach(([key, value]) =>
-					formData.append(key, value)
-				);
-
-				const res = await sendEmail(formData);
+				const res = await sendEmail(data);
 				console.log('sendEmail response:', res);
 
 				if (!res.success) {
