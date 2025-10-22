@@ -16,36 +16,45 @@ const ProductView = ({ product }: { product: Product }) => {
 						<div className="w-16 h-[5px] bg-ecoandina-rojo rounded-full"></div>
 					</div>
 					<p className="mb-6">{product.description}</p>
-					<div className="bg-[#232323] text-white overflow-hidden shadow-lg max-w-[500px]">
-						{/* Main content */}
-						<div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
-							{/* Products column */}
-							<div>
-								<h3 className="font-semibold text-sm mb-3 text-white">
-									PRODUCTOS
-								</h3>
-								<ul className="space-y-1">
-									{product?.products?.map((product, index) => (
-										<li key={index} className="text-sm text-white">
-											{product}
-										</li>
-									))}
-								</ul>
-							</div>
+					{((product?.products && product?.products?.length > 0) ||
+						(product?.uses && product?.uses?.length > 0)) && (
+						<div className="bg-[#232323] text-white overflow-hidden shadow-lg max-w-[500px]">
+							{/* Main content */}
+							<div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
+								{/* Products column */}
+								{product?.products && product.products.length > 0 && (
+									<div>
+										<h3 className="font-semibold text-sm mb-3 text-white">
+											PRODUCTOS
+										</h3>
+										<ul className="space-y-1">
+											{product.products.map((productItem, index) => (
+												<li key={index} className="text-sm text-white">
+													{productItem}
+												</li>
+											))}
+										</ul>
+									</div>
+								)}
 
-							{/* Uses column */}
-							<div>
-								<h3 className="font-semibold text-sm mb-3 text-white">USOS</h3>
-								<ul className="space-y-1">
-									{product.uses?.map((use, index) => (
-										<li key={index} className="text-sm text-white">
-											• {use}
-										</li>
-									))}
-								</ul>
+								{/* Uses column */}
+								{product?.uses && product.uses.length > 0 && (
+									<div>
+										<h3 className="font-semibold text-sm mb-3 text-white">
+											USOS
+										</h3>
+										<ul className="space-y-1">
+											{product.uses.map((use, index) => (
+												<li key={index} className="text-sm text-white">
+													• {use}
+												</li>
+											))}
+										</ul>
+									</div>
+								)}
 							</div>
 						</div>
-					</div>
+					)}
 				</div>
 				<div className="w-full h-full p-2.5 bg-white shadow-2xl">
 					<Image

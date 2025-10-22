@@ -35,7 +35,7 @@ const PreviewProduct: React.FC<PreviewProductProps> = ({
 			{/* Footer con el título */}
 			<div
 				className="max-h-[95px] h-full px-4 w-full absolute bottom-0 font-bold 
-                      bg-ecoandina-rojo text-white text-center flex items-center justify-center
+                      bg-ecoandina-rojo text-white text-center text-sm flex items-center justify-center
                       "
 			>
 				{title}
