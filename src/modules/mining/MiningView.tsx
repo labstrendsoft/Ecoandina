@@ -59,13 +59,13 @@ const MiningView = () => {
 					</div>
 
 					{/* Grid de Servicios */}
-					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 ">
+					<div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 ">
 						{miningServices.map((service, idx) => (
 							<div key={idx} className="group p-8  bg-white  rounded-3xl  ">
-								<div className="mb-6 p-4 bg-ecoandina-rojo rounded-2xl inline-block   shadow-inner">
+								<div className="mb-4 p-4 bg-ecoandina-rojo rounded-2xl inline-block   shadow-inner">
 									{service.icon}
 								</div>
-								<h4 className="text-lg font-bold mb-4 ">{service.title}</h4>
+								<h4 className="text-lg font-bold mb-2 ">{service.title}</h4>
 								<p className="text-sm leading-relaxed font-light">
 									{service.desc}
 								</p>
