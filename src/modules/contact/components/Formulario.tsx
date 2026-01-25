@@ -54,7 +54,7 @@ export const ContactForm = () => {
 		startTransition(async () => {
 			try {
 				const res = await sendEmail(data);
-				console.log('sendEmail response:', res);
+				// console.log('sendEmail response:', res);
 
 				if (!res.success) {
 					setResult({

@@ -77,7 +77,7 @@ export default function Footer() {
 										alt="celular"
 										className="w-3.5 object-cover"
 									/>
-									<span className="text-sm">+51 972 161 054</span>
+									<span className="text-sm">+51 936 550 858</span>
 								</div>
 							</li>
 							<li>
@@ -88,7 +88,7 @@ export default function Footer() {
 										className="w-3.5 object-cover"
 									/>
 									<span className="text-sm">
-										servicioalcliente@ecoandina-peru.com
+										atencionalcliente@ecoandinaperu.com
 									</span>
 								</div>
 							</li>
@@ -139,7 +139,7 @@ export default function Footer() {
 
 				{/* Copyright */}
 				<div className="mt-12 py-8 border-t border-gray-800 text-center">
-					<p className="text-gray-300 text-sm">©2025 Thedooragency</p>
+					<p className="text-gray-300 text-sm">©2026 Ecoandinaperú</p>
 				</div>
 			</div>
 		</footer>

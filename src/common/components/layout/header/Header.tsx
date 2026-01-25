@@ -8,18 +8,18 @@ import { MobileMenu } from './MenuMovil';
 
 const Header = () => {
 	return (
-		<header className="bg-thedooragency-negro sticky top-0 z-40 w-full overflow-hidden  border-white/30 bg-white">
+		<header className="bg-thedooragency-negro sticky top-0 z-40 w-full overflow-hidden  border-white/30 bg-white shadow-lg">
 			<div className="w-full  flex  items-center justify-end ">
 				<div className="flex flex-wrap lg:flex-row items-center max-lg:px-2 justify-center lg:justify-start gap-2.5 lg:gap-4 lg:pl-10 bg-ecoandina-rojo max-w-full  lg:max-w-[750px] py-1.5 text-white text-xs w-full clip-diagonal lg:-mr-1">
 					<div className="flex items-center gap-1.5">
 						<Phone className="w-3 h-3" />
 						{/* <span className="md:block hidden">TELÉFONO: </span> */}
-						<span>+51 972 161 054</span>
+						<span>+51 936 550 858</span>
 					</div>
 					<div className="flex items-center gap-1.5">
 						<Mail className="w-3 h-3" />
 						{/* <span className="md:block hidden">CORREO:</span> */}
-						<span>servicioalcliente@ecoandina-peru.com</span>
+						<span>atencionalcliente@ecoandinaperu.com</span>
 					</div>
 					<div className="hidden md:flex items-center gap-1.5">
 						<MapPin className="w-3 h-3" />

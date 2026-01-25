@@ -12,6 +12,11 @@ export const NAVIGATION_MENU: Nav[] = [
 		matchStart: false,
 	},
 	{
+		name: 'MINERÍA',
+		href: '/mineria',
+		matchStart: false,
+	},
+	{
 		name: 'PRODUCTOS',
 		href: '/productos',
 		aliases: ['/producto'],

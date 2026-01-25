@@ -47,8 +47,7 @@ export const ContactView = () => {
 									alt="celular"
 									className="w-5 object-cover lg:w-7"
 								/>
-								<span className="text-sm">+51 908 805 559</span>
-								<span className="text-sm">+51 908 899 508</span>
+								<span className="text-sm">+51 936 550 858</span>
 							</div>
 							<div className="flex items-center gap-4">
 								<Image
@@ -57,7 +56,7 @@ export const ContactView = () => {
 									className="w-5 object-cover lg:w-7"
 								/>
 								<span className="text-sm">
-									servicioalcliente@ecoandina-peru.com
+									atencionalcliente@ecoandinaperu.com
 								</span>
 							</div>
 
