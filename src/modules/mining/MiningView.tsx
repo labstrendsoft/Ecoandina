@@ -2,6 +2,8 @@ import Banner from '@/common/components/customize/Banner';
 import { Container } from '@/common/components/customize/Container';
 import React from 'react';
 import foto from '@public/about/portada-about.png';
+import mineria from '@public/mineria/mineria.png';
+
 import {
 	Pickaxe,
 	ShieldAlert,
@@ -12,6 +14,7 @@ import {
 	ChevronRight,
 } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const MiningView = () => {
 	const miningServices = [
@@ -75,8 +78,8 @@ const MiningView = () => {
 
 					<div className="rounded-[2.5rem] overflow-hidden relative group shadow-2xl border border-white/5">
 						<div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/60 to-transparent z-10"></div>
-						<img
-							src="https://images.unsplash.com/photo-1578319439584-104c94d37305?auto=format&fit=crop&q=80&w=1600"
+						<Image
+							src={mineria}
 							alt="Minería Subterránea Ecoandina"
 							className="w-full h-[300px] sm:h-[450px] object-cover group-hover:scale-105 transition-transform duration-300"
 						/>
