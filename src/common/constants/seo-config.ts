@@ -136,3 +136,18 @@ export const DEFAULT_SEO_NOTICIES = {
 		'innovación en construcción',
 	],
 };
+export const DEFAULT_SEO_MINING = {
+	title: 'Minería | Ecoandina',
+	description:
+		'Descubre las soluciones de Ecoandina para el sector minero, con aditivos y tecnologías aplicadas al concreto que mejoran la resistencia, durabilidad y desempeño en entornos exigentes de minería e infraestructura.',
+	keywords: [
+		'minería',
+		'Ecoandina',
+		'aditivos para concreto minería',
+		'concreto para minería',
+		'soluciones industriales',
+		'infraestructura minera',
+		'tecnología en concreto',
+		'construcción en minería',
+	],
+};
